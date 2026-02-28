@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="k6Pw_XC7ECrwJa1hLiYWrBzsHZM-vQDe4zITIZ87yDo" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harish Kadu | Senior Quality Assurance Engineer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #0b0f19;
+      color: #e6e6e6;
+    }
+
+    /* Make all faded Bootstrap text visible on dark background */
+    .text-white-50 {
+      color: rgba(245, 245, 220, 0.88) !important;
+      opacity: 1 !important;
+    }
+
+    /* Quick Highlights: Cream text but icons stay green */
+    .quick-highlights {
+      color: #f5f5dc !important;
+    }
+
+    .quick-highlights h5,
+    .quick-highlights li {
+      color: #f5f5dc !important;
+    }
+
+    .quick-highlights .text-success {
+      color: #22c55e !important;
+    }
+
+    .navbar {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -150px;
+      right: -150px;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.35), transparent 65%);
+      filter: blur(20px);
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: -150px;
+      left: -150px;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.35), transparent 65%);
+      filter: blur(20px);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge-soft {
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(99, 102, 241, 0.35);
+      color: #c7d2fe;
+      font-weight: 500;
+      padding: 0.5rem 0.75rem;
+      border-radius: 999px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #6366f1, #22c55e);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.9;
+    }
+
+    .section-title {
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(99, 102, 241, 0.4);
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    .skill-pill {
+      background: rgba(20, 184, 166, 0.15);
+      border: 1px solid rgba(20, 184, 166, 0.25);
+      color: #99f6e4;
+      border-radius: 999px;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin: 0.25rem;
+    }
+
+    .project-tag {
+      font-size: 0.85rem;
+      background: rgba(99, 102, 241, 0.18);
+      border: 1px solid rgba(99, 102, 241, 0.25);
+      color: #c7d2fe;
+      border-radius: 999px;
+      padding: 0.25rem 0.6rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: rgba(148, 163, 184, 0.15);
+      margin: 2rem 0;
+    }
+
+    .footer {
+      border-top: 1px solid rgba(148, 163, 184, 0.15);
+      padding: 1.5rem 0;
+      background: rgba(15, 23, 42, 0.85);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Harish<span style="color:#22c55e;">.</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-7">
+          <br><br><br>
+
+          <span class="badge-soft"><i class="bi bi-check2-circle"></i> Senior Quality Assurance Engineer | Manual + Automation Testing</span>
+
+          <h1 class="display-5 fw-bold mt-3">
+            Hi, I’m <span style="color:#6366f1;">Harish Kadu</span><br />
+            I build reliable test automation using <span style="color:#22c55e;">Selenium - Java</span>
+          </h1>
+
+          <p class="mt-3 text-white-50 fs-5">
+            Software Tester with <strong>5+ years of experience</strong> in functional testing, regression,
+            and automation testing. Skilled in building maintainable test suites,
+            improving test coverage, and delivering quality releases with confidence.
+          </p>
+
+          <div class="d-flex gap-3 mt-4 flex-wrap">
+            <a class="btn btn-primary btn-lg px-4" href="#contact">
+              Hire Me <i class="bi bi-arrow-right"></i>
+            </a>
+
+            <a class="btn btn-outline-light btn-lg px-4" href="https://www.linkedin.com/in/harishdkadu940540/"
+              target="_blank">
+              LinkedIn <i class="bi bi-linkedin"></i>
+            </a>
+
+               <a class="btn btn-outline-light btn-lg px-4" href="https://www.crio.do/learn/portfolio/kaduharish95/" target="_blank">
+              Crio.do <i class = '' ></i>
+            </a>
+
+            <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/HarishK95" target="_blank">
+              GitHub <i class="bi bi-github"></i>
+              </a>
+
+              <a href="resume/Harish_Kadu_CV_5+ Yrs.pdf" class="btn btn-outline-light btn-lg px-4"></i>
+                Download Resume</a>
+            
+            
+          </div>
+
+          <div class="mt-4 text-white-50">
+            <i class="bi bi-geo-alt"></i> India &nbsp; | &nbsp;
+            <i class="bi bi-briefcase"></i> Open to Role : SDET, Senior Quality Assurance Engineer, Senior Automation Engineer (Manual + Automation)
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-4 quick-highlights">
+            <h5 class="fw-bold mb-3"><i class="bi bi-stars"></i> Quick Highlights</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-3">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                5+ years experience in Software Testing
+              </li>
+              <li class="mb-3">
+              <i class="bi bi-check-circle-fill text-success"></i>
+                Automation with Selenium + Java
+              </li>
+                <i class="bi bi-check-circle-fill text-success"></i>
+                Strong in Manual Testing + Test Case Design
+              </li>
+              <li class="mb-3">
+               
+              <li class="mb-0">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                Expertise in Regression, Smoke & API Testing
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <h2 class="section-title mb-3">About Me</h2>
+      <p class="text-white-50 fs-5">
+        I am a Quality Assurance Engineer focused on delivering bug-free and high-performance applications.
+        I bring strong fundamentals in manual testing and modern automation with Java - Selenium.
+        My approach combines clear documentation, good test coverage, and continuous improvement.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 h-100">
+          <h5 class="fw-bold" style="color:#f5f5dc;">  <i class="bi bi-bullseye"></i> What I Do</h5>
+            <ul class="mt-3 text-white-50">
+              <li>Build scalable UI & API Automation Frameworks using Selenium & REST Assured</li>
+              <li>Design and execute End-to-End Test Strategies for Web & Windows applications</li>
+              <li>Perform API, Functional & Regression Testing to ensure high-quality releases</li>
+              <li>Implement Data-Driven & BDD frameworks using Java, TestNG & Cucumber</li>
+              <li>Optimize release cycles by reducing manual effort and improving test coverage</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-4 h-100">
+           <h5 class="fw-bold" style="color:#f5f5dc;"><i class="bi bi-award"></i> Strengths</h5>
+            <ul class="mt-3 text-white-50">
+              <li>Strong analytical thinking with exceptional attention to detail</li>
+              <li>Clear and structured communication in defect tracking and reporting</li>
+              <li>Automation-first mindset to eliminate repetitive manual efforts</li>
+              <li>Quick learner with high ownership and accountability</li>
+              <li>Proactive problem-solver with a continuous improvement approach</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="py-5" id="skills">
+    <div class="container">
+      <h2 class="section-title mb-3">Skills</h2>
+      <p class="text-white-50 fs-5">Core skillset based on my testing and automation expertise.</p>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;"><i class="bi bi-clipboard-check"></i> Manual Testing</h5>
+            <div class="mt-3">
+              <span class="skill-pill">Functional Testing</span>
+              <span class="skill-pill">Regression Testing</span>
+              <span class="skill-pill">Smoke Testing</span>
+              <span class="skill-pill">Sanity Testing</span>
+              <span class="skill-pill">Test Case Design</span>
+              <span class="skill-pill">Bug Reporting</span>
+              <span class="skill-pill">STLC</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;"><i class="bi bi-code-slash"></i> Automation</h5>
+            <div class="mt-3">
+              <span class="skill-pill">Selenium WebDriver</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">TestNG</span>
+              <span class="skill-pill">BDD Framework</span>
+              <span class="skill-pill">Hybrid & Data-Driven Framework</span>
+              <span class="skill-pill">WinAppDriver</span>
+              <span class="skill-pill">Reports (Extend Report)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;"><i class="bi bi-tools"></i> Tools & Workflow</h5>
+            <div class="mt-3">
+              <span class="skill-pill">JIRA</span>
+              <span class="skill-pill">Version Control – Git, SVN</span>
+              <span class="skill-pill">Postman (Basic)</span>
+              <span class="skill-pill">JMeter</span>
+              <span class="skill-pill">Agile / Scrum</span>
+              <span class="skill-pill">Jenkins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="py-5" id="experience">
+    <div class="container">
+      <h2 class="section-title mb-3">Professional Experience</h2>
+      <p class="text-white-50 fs-5">
+        Here is a summary of my professional experience in software testing.
+      </p>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-6">
+          <div class="card p-4 h-100">
+           <h5 class="fw-bold" style="color:#f5f5dc;">Senior Quality Assurance Engineer</h5>
+            <p class="text-white-50 mb-1">Senses Electronic Private Limited [Pune | 11/2021 - Present]</p>
+
+            <div class="mt-3 text-white-50">
+              <ul>
+                <li>Designed and enhanced scalable automation frameworks using Selenium WebDriver, Java, and TestNG, increasing regression test coverage, and reducing manual testing effort by 30%.</li>
+                <li>Developed and executed automated test scripts and manual test cases for web applications, achieving 90% automation coverage, and significantly improving overall test efficiency.</li>
+                <li>Performed REST API validation using Postman and REST Assured, covering 40+ endpoints, and reducing backend integration defects by 20%.</li>
+                <li>Collaborated with cross-functional teams, including developers and product owners, in Agile environments, contributing to a 25% improvement in release quality.</li>
+                <li>Actively participated in 20+ defect triage and sprint planning sessions, accelerating issue resolution, and achieving 90% sprint goal adherence.</li>
+                <li>Mentored junior QA engineers on automation best practices, framework usage, and defect lifecycle management, improving overall team productivity and code quality.</li>
+              </ul>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="project-tag">Manual + Automation</span>
+              <span class="project-tag">Selenium WebDriver + Java</span>
+              <span class="project-tag">POM</span>
+              <span class="project-tag">Data - Driven Framework</span>
+              <span class="project-tag">TestNG</span>
+              <span class="project-tag">REST Assured</span>
+              <span class="project-tag">Regression</span>
+              <span class="project-tag">Postman</span>
+              <span class="project-tag">Agile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">Software Test Engineer</h5>
+            <p class="text-white-50 mb-1">Bajaj Finance Limited [Pune | 12/2020 - 10/2021]</p>
+
+            <div class="mt-3 text-white-50">
+              <ul>
+                <li>Conducted functional and non-functional validation across customer-facing applications to ensure business-critical workflow stability</li>
+                <li>Created and maintained test plans, scenarios, and test data sets to achieve comprehensive test coverage.</li>
+                <li>Leveraged JMeter to conduct performance and load analysis on high-volume systems, maintaining 99.9% application uptime during the peak Diwali season.</li>
+                <li>Actively involved in daily Agile stand-ups, sprint retrospectives, and backlog grooming sessions to align QA deliverables with sprint goals.</li>
+              </ul>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="project-tag">Manual + Automation</span>
+              <span class="project-tag">Performance Testing - JMeter</span>
+              <span class="project-tag">SFDC</span>
+              <span class="project-tag">Functional ans non-functional Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="py-5" id="projects">
+    <div class="container">
+      <h2 class="section-title mb-3">Projects</h2>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">
+            Sense Manage</h5>
+            <p class="text-white-50">
+              Automated end-to-end functional workflows of a client-server web application using Selenium WebDriver and Java, validating dashboard data with backend records, and reducing manual testing effort by 60%.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Selenium WebDriver</span>
+              <span class="project-tag">Java</span>
+              <span class="project-tag">REST Assured</span>
+              <span class="project-tag">JMeter</span>
+              <span class="project-tag">Postman</span>
+              <span class="project-tag">Cross browser testing</span>
+            </div>
+          </div>
+        </div>
+
+<div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">
+            Sense Talk</h5>
+            <p class="text-white-50">
+              Automated dashboard functionalities using Selenium, and validated broadcast message delivery through REST Assured API validation, ensuring accurate end-to-end communication across remote machines.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Selenium WebDriver</span>
+              <span class="project-tag">Java</span>
+              <span class="project-tag">REST Assured</span>
+              <span class="project-tag">JMeter</span>
+              <span class="project-tag">Postman</span>
+              <span class="project-tag">Cross browser testing</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">Senses Licensing</h5>
+            <p class="text-white-50">
+              Developed a hybrid automation framework using Selenium, REST Assured, Java, and TestNG to automate complete license lifecycle workflows, reducing regression time by 40%.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Selenium WebDriver</span>
+              <span class="project-tag">Java</span>
+              <span class="project-tag">REST Assured</span>
+              <span class="project-tag">JMeter</span>
+              <span class="project-tag">Postman</span>
+              <span class="project-tag">Cross browser testing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">Sense Board</h5>
+            <p class="text-white-50">
+              Designed and implemented a WinAppDriver automation framework for a Windows-based e-learning application, automating 90% of core features, and reducing manual testing time by 50%.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Selenium</span>
+              <span class="project-tag">WinAppDriver</span>
+              <span class="project-tag">Java</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">Salesforce (SFDC) Application</h5>
+            <p class="text-white-50">
+              Created end-to-end test scenarios for CRM functionality, and decreased UAT issues by 40%.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Selenium WebDriver</span>
+              <span class="project-tag">Java</span>
+              <span class="project-tag">TestNG</span>
+              <span class="project-tag">Maven</span>
+              <span class="project-tag">TestNG</span>
+              <span class="project-tag">JMeter</span>
+            </div>
+          </div>
+        </div>
+
+            <div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">I-CRM</h5>
+            <p class="text-white-50">
+              Enhanced manual testing coverage for the customer service platform and ensured coverage of waiver and case management features. 
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Manual Testing</span>
+              <span class="project-tag">Functional Testing</span>
+              <span class="project-tag">Sanity Testing</span>
+              <span class="project-tag">Smoke Testing</span>
+              <span class="project-tag">Regression Testing</span>
+              <span class="project-tag">Jira</span>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-6 col-lg-4">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;">Indus Collection Mobile App</h5>
+            <p class="text-white-50">
+              Tested receipt generation and customer feedback modules manually. 
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="project-tag">Manual Testing</span>
+              <span class="project-tag">Functional Testing</span>
+              <span class="project-tag">Sanity Testing</span>
+              <span class="project-tag">Smoke Testing</span>
+              <span class="project-tag">Regression Testing</span>
+              <span class="project-tag">Jira</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="section-title mb-3">Contact Me</h2>
+      <p class="text-white-50 fs-5">
+        Let’s connect — I’m actively seeking opportunities as an SDET, Senior Quality Assurance Engineer, or Senior Automation Engineer.
+      </p>
+
+      <div class="row g-4 mt-3">
+        <div class="col-lg-6">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold" style="color:#f5f5dc;"><i class="bi bi-person-lines-fill"></i> Contact Details</h5>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-telephone"></i> <strong>Phone:</strong> +91 9405402908
+            </p>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-linkedin"></i> <strong>LinkedIn:</strong>
+              <a class="text-decoration-underline text-light" target="_blank"
+                href="https://www.linkedin.com/in/harishdkadu940540/">
+                linkedin - Harish Kadu
+              </a>
+            </p>
+
+            <p class="text-white-50 mb-2">
+              <i class="bi bi-github"></i> <strong>GitHub:</strong>
+              <a class="text-decoration-underline text-light" target="_blank" href="https://github.com/HarishK95">
+                github - HarishK95
+              </a>
+            </p>
+
+            <p class="text-white-50 mb-0">
+              <i class="bi bi-envelope"></i> <strong>Email:</strong>
+              <span class="text-white-50">kaduharish95@gmail.com</span>
+            </p>
+
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p class="mb-1 text-white-50">
+        © <span id="year"></span> Harish Kadu — Senior Quality Assurance Engineer 
+      </p>
+      <small class="text-white-50">
+         Manual + Automation Testing | Selenium + Java
+      </small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
